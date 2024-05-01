@@ -42,7 +42,7 @@ export default async function GET(request, response) {
 
 
   // Output for Vercel serverless function
-  return response.status(400).json({
+  return response.status(200).json({
     answer,
     rewriteAnswer,
     intent,
