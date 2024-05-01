@@ -4,12 +4,19 @@ Project prepared to be run as a Vercel serverless function - For easy testing
 
 ## Changes
 [x] - A new step added in the end for rewritting the answer in a friendly way
+
 [x] - English prompts added to rewrite (for that case english prompts are better)
+
 [x] - New prompts considering the persona documentation provided
-[x] - Humanhumanized answers (`src/prompts/shared/system.js`)
+
+[x] - Humanized answers (`src/prompts/shared/system.js`)
+
 [x] - Ramdomize the answers to avoid repeated the exactly same sentences
+
 [x] - Isolated relevant logic
+
 [x] - Refactored code base 
+
 [x] - Concern separation
 
 | File/Folder  | Details |
