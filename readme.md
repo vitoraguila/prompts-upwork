@@ -5,6 +5,7 @@ Project prepared to be run as a Vercel serverless function - For easy testing
 ## Changes
 [x] - A new step added in the end for rewritting the answer in a friendly way
 [x] - English prompts added to rewrite (for that case english prompts are better)
+[x] - New prompts considering the persona documentation provided
 [x] - Humanhumanized answers (`src/prompts/shared/system.js`)
 [x] - Ramdomize the answers to avoid repeated the exactly same sentences
 [x] - Isolated relevant logic
@@ -16,6 +17,15 @@ Project prepared to be run as a Vercel serverless function - For easy testing
 | api/chat.js |  Main logic is inside, there is a comment showing where start and where ends to copy |
 | src/* |  All files in that folder are important, contains the logic isolation, project standards, refactoring |
 
+
+## Setup
+1 - Create .env file in the root repository with the open ai key
+```
+OPENAI_API_KEY=
+```
+2 - Setup vercel account and vercel SDK
+
+3 - Use the command `vercel dev` to run locally
 
 ## Future improvements
 [ ] - Use some in-memory DB to store answers and informations about that user. This way once the user is back to the conversation after few days we can send some message like "welcome back", "nice talk to you again", "glad to see you". Can be more human being if store more data from the users. This will be a big step to map all those feedbacks.
